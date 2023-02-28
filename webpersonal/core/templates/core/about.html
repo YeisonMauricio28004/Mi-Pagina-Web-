@@ -1,0 +1,27 @@
+<!-- Aqui vamos a indicar el llamado de la Herencia de base.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block backgroud %}{% load static %}{% static 'core/img/Home.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Sobre Mi</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-3 col-md-4 offset-lg-1">
+     <img class="img-fluid avatar" src="{% static 'core/img/Mi Logo.png' %}" alt="Mi Logo">
+</div>
+<div class="col-lg-7 col-md-8">
+     <h2 class="section-heading">Mi nombre es Yeison Mauricio Álvarez  </h2>   
+     <p>
+          Soy Estudiante de Ingenieria en Sistemas y Computación, estudio en  la Universidad
+          Doctor Andrés Bello, llevo Mi primer año de Universidad .
+     </p>
+     <p>
+          Actualmente soy estudiante Universitario y ya pronto sere un Profecional 
+     </p>
+</div>
+{% endblock %}

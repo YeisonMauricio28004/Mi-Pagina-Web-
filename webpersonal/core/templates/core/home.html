@@ -1,0 +1,11 @@
+<!-- Aqui vamos a indicar el llamado de la Herencia de base.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Portada{% endblock %}
+
+{% block backgroud %}{% load static %}{% static 'core/img/Portada.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Yeison Mauricio Álvarez </h1>
+<span class="subheading">Ingenieria en Sistemas y Computacion </span>
+{% endblock %}

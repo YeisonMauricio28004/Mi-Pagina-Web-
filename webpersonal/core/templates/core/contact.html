@@ -1,0 +1,36 @@
+<!-- Aqui vamos a indicar el llamado de la Herencia de base.html -->
+{% extends 'core/base.html' %}
+
+{% block title %}Contactanos{% endblock %}
+
+{% block backgroud %}{% load static %}{% static 'core/img/Contacto.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-8 col-md-10 mx-auto">
+     <p>
+          Me Puedes Contactar por los siguiente medios
+     </p>
+
+     <br>
+
+     <p>
+          <b>Teléfono:</b> +503 6006 3009
+     </p>
+
+     <p>
+          <b>Correo Electronico:</b> jason.alvarez2804@gmail.com
+     </p>
+     <p>
+          <b>Facebook:</b> <a href="https://www.facebook.com/" target="_blank"> facebook.com/Yeison Mauricio Álvarez </a>
+     </p>
+     /p>
+     <p>
+          <b><I>Instagram</I>:</b> <a href="https://www.instagram.com/yeison_28_mau/" target="_blank"> instagram.com/yeison_28_mau</a>
+     </p>
+</div>
+{% endblock %}
